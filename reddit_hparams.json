@@ -1,0 +1,12 @@
+{
+    "BERT_MODEL": "bert-base-uncased",
+    "CLASSES": [
+        "suicidal-post"
+    ],
+    "BATCH_SIZE": 12,
+    "NUM_EPOCHS": 10,
+    "LEARNING_RATE": 1.5e-5,
+    "PATIENCE": 2,
+    "MAX_EXAMPLE_LEN": 100,
+    "N_EXAMPLES": 3000
+}

@@ -1,0 +1,6 @@
+Profile_SI-ENV/
+wandb/
+model_checkpoints/
+/store.txt
+Datasets/
+__pycache__/

@@ -1,0 +1,32 @@
+method: bayes
+metric:
+  goal: maximize
+  name: max accuracy/valid
+parameters:
+  BATCH_SIZE:
+    distribution: int_uniform
+    max: 24
+    min: 6
+  PATIENCE:
+    distribution: int_uniform
+    max: 4
+    min: 1
+  LEARNING_RATE:
+    distribution: uniform
+    max: 3.0e-05
+    min: 7.5e-06
+  MAX_EXAMPLE_LEN:
+    distribution: constant
+    value: 100
+  BERT_MODEL:
+    distribution: categorical
+    values:
+    - bert-base-uncased
+  N_EXAMPLES:
+    distribution: int_uniform
+    max: 15000
+    min: 600
+  NUM_EPOCHS:
+    distribution: constant
+    value: 30
+program: train_reddit.py
